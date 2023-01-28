@@ -1,0 +1,220 @@
+<!-- En este documento trato de dividir en comentarios cada seccion que fue establecida.
+Podran ver como cada seccion tiene un comentario de inicio (I) y fin (E) para establecer el inicio
+de la seccion y su correspondiente final-->
+
+
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+    <body class="w-screen overflow-x-hidden">
+      
+      <nav class="flex items-center justify-between flex-wrap bg-teal-600 p-6 w-screen">
+
+        <!-- Titulo de cabecera e icono I-->
+        <div class="flex items-center flex-shrink-0 text-white mr-6 hover:scale-110 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2 hover:scale-110 transition-all">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+          </svg>
+          <span id="text" class="font-semibold text-xl tracking-tight" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">Mi Curriculum</span>
+        </div>
+        <!-- Titulo de cabecera e icono E-->
+
+        <!-- Boton del menu I-->
+        <div class="block lg:hidden px-3">
+          <button id="boton" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <!-- Boton del Menu E-->
+
+        <!-- Botones del navegador I-->
+        <div id="menu" class="w-full  flex-grow lg:flex lg:items-center lg:w-auto text-right px-5 lg:px-10 hidden">
+          <div class="text-sm lg:flex-grow">
+            <a href="#acercade" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:font-bold mr-4 transition-all">
+              ACERCA DE MI
+            </a>
+            <a href="#educacion" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:font-bold mr-4 transition-all">
+              EDUCACION
+            </a>
+            <a href="#experiencia" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:font-bold mr-4 transition-all">
+              EXPERIENCIA
+            </a>
+          </div>
+
+        <!-- Botones del navegador E-->
+          
+          <!-- Boton de Download #####
+          <div>
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+          </div>
+          -->
+        </div>
+      </nav>
+
+      <!-- Primera Seccion -->
+      <div class="flex justify-center content-center bg-gradient-to-b from-teal-600 to-teal-50 dark:to-teal-900 w-screen h-screen items-center">
+          <div class="px-10">
+            <div class=" ">
+              <h1 class=" font-bold text-white text-5xl text-center js-show-on-scroll" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);">Almada Matias Gabriel </h1>
+              <div class="border-b border-gray-300 my-2 js-show-on-scroll"></div>
+              <p class=" text-white text-4x1 text-center js-show-on-scroll">Desarrollador Full-Stack</p>
+              <p class=" text-white text-4x1 text-center js-show-on-scroll">26 años</p>
+              <p class=" text-white text-4x1 text-center js-show-on-scroll">Licenciado en Gestion Tecnologica</p>
+            </div>
+            <div>
+              <img class=" justify-end js-show-on-scroll"src="Young-Man-PNG-Free-Image.png" alt="">
+            </div>
+          </div>
+      </div>
+      <!-- Primera Seccion -->
+    <div>
+      <button id="button" class="fixed bottom-0 right-0 z-50 border border-teal-900 rounded-full mx-5 my-5 px-3 py-3 hover:animate-bounce transition-all bg-teal-100 ">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+        </svg>      
+        
+      </button>
+
+      <!-- Segunda Seccion -->
+      <div id="acercade"class="flex bg-gradient-to-b from-teal-50 to-white w-screen h-screen content-center items-center justify-center">
+        <div class="justify-self-start border border-gray-50 border-solid rounded h-1/2 w-1/2 bg-white shadow-xl items-center">
+          <h1 id="hidden" class="sm:text-md sm:pt-20 text-b mx-10 pt-28 text-center text-4xl font-bold items-center text-teal-500 js-show-on-scroll">Acerca de mi</h1>
+          <p class=" xl:text-base text-sm mx-10 pt-20 text-center font-mono js-show-on-scroll">Soy desarrollador Full-Stack con una carrera en desarrollo
+            de aplicaciones y gestion de la tecnologia. Tengo 3 años de experiencia en docencia, administracion de datos
+            y atencion al cliente, toda experiencia obtenida en diversas escuelas secundarias de La Matanza, Buenos Aires
+            Argentina. Poseo conocimientos en desarrollo web con HTML, TailwindCSS y Javascript. Ademas, poseo conocimientos 
+            en desarrollo de aplicaciones con visual basic, c#, Java y Python.</p>
+            
+          <ul class="xl:grid grid-cols-3 justify-items-center hidden">
+            <li class="py-10"><img class=" h-40 w-40 js-show-on-scroll" src="HTML5_logo_and_wordmark.svg.png" alt=""></li>
+            <li class="py-10"><img class=" h-40 w-40 js-show-on-scroll" src="Tailwind_CSS_Logo.svg.png" alt=""></li>
+            <li class="py-10"><img class=" h-40 w-40 js-show-on-scroll" src="JavaScript-logo.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Segunda Seccion -->
+
+      <!-- Tercera Seccion -->
+      <div id="educacion" class="flex bg-gradient-to-b from-white to-teal-50 w-screen h-screen content-center items-center justify-center">
+        <div class="flex justify-center border border-gray-50 border-solid rounded h-2/3 w-2/3 bg-white shadow-2xl items-center">
+          <ul class="grid grid-cols-2 grid-rows-6 justify-items-center h-full w-full gap-8 px-8 js-show-on-scroll">
+          <li class="col-span-2"><h1 class=" justify-start content-start items-start text-center text-4xl text-teal-500 font-bold pt-16 font-sans">Educación</h1>
+          <li class="items-center content-center row-span-5 py-10 h-full w-full"><div class=" border border-gray-50 border-solid rounded h-full w-full bg-slate-50 shadow-xl items-center content-center">
+            <h1 class="xl:text-base text-sm pt-10 text-center font-bold font-sans text-slate-600">Tecnicatura en analisis, desarrollo y programacion de aplicaciones</h1>
+            <h1 class="xl:text-base text-sm pt-1 text-center font-bold font-sans text-slate-500">Instituto de Formacion Docente y Tecnica N°46</h1>
+            <div class="flex items-center justify-center pt-14">
+              <img class="xl:w-1/2 xl:h-1/2 w-full h-1/2 border rounded shadow-2xl" src="./2017-08-01.jpg" alt="">
+            </div>
+            <div class=" text-center xl:text-base text-sm">
+            <p class="px-10 xl:pt-10 pt-20">Grado: Tecnicatura</p>
+            <p class="px-10 py-5">Año de graduacion: 2019</p>
+            </div>
+            
+          </div></li>
+          <li class="row-span-5 py-10 h-full w-full"><div class=" border border-gray-50 border-solid rounded h-full w-full bg-slate-50 shadow-xl">
+            <h1 class="xl:text-base text-sm pt-10 text-center font-bold font-sans text-slate-600">Licenciatura en gestion tecnologica</h1>
+            <h1 class="xl:text-base text-sm pt-1 text-center font-bold font-sans text-slate-500">Universidad Nacional de la Matanza</h1>
+            <div class="flex items-center justify-center pt-14">
+              <img class="xl:w-1/2 xl:h-1/2 w-full h-1/2 border rounded shadow-2xl" src="./Entrada-730-2.jpg" alt="">
+            </div>
+            <div class=" text-center xl:text-base text-sm">
+            <p class="px-10 pt-20">Grado: Licenciatura</p>
+            <p class="px-10 py-5">Año de graduacion: 2023 </p>
+            </div>
+          </div></li>
+        </ul>
+        </div>
+      </div>
+      <!-- Tercera Seccion -->
+
+      <!-- Cuarta Seccion -->
+      <div id="experiencia" class=" flex items-center content-center justify-center bg-gradient-to-b from-teal-50 to-white w-screen h-screen">
+          <div class="justify-self-start border border-gray-50 border-solid rounded h-1/2 w-1/2 bg-white shadow-xl items-center">
+            <h1 id="hidden" class="sm:text-md sm:pt-20 text-b mx-10 pt-28 text-center text-4xl font-bold items-center text-teal-500 js-show-on-scroll">Experiencia</h1>
+            <p class=" xl:text-base text-sm mx-10 pt-20 xl:pt-36 text-center font-mono js-show-on-scroll">Cuento con 5 años de experiencia en la docencia, enseñando a chicos de 4to año de secundaria en el area de la informatica.
+            </p>
+            <p class=" xl:text-base text-sm mx-10 pt-10 text-center font-mono js-show-on-scroll">Realice actividades administrativas en secretaria, entre ellas puedo destacar: carga de datos de alumnos recibidos para realizar su certificacion, administracion de datos
+               tanto de docentes como de alumnos y atencion al cliente.
+            </p>
+            <p class=" xl:text-base text-sm mx-10 pt-10 text-center font-mono js-show-on-scroll">Tambien lleve a cabo diversos trabajos freelance de: edicion de videos, edicion de fotos, desarrollo de aplicaciones tanto de escritorio como web y paginas web.
+           </p>
+          </div>
+      </div>
+      <!-- Cuarta Seccion -->
+    </div>
+      <!-- Footer Contacto -->
+      <div id="contacto" class=" bg-slate-50 h-56 text-center content-center justify-center items-center pt-16">
+        <h1 class="font-bold text-lg pb-4">Contacto</h1>
+        <h1 class="font-mono">Telefono: 11-1111-1111</h1>
+        <h1 class="font-mono">Email: Correofalso@gmail.com</h1>
+      </div>
+      <!-- Footer Contacto -->
+
+      <!-- Javascript -->
+    <script> 
+const button = document.querySelector("#button");
+button.addEventListener("click", () => {
+  window.scrollTo({ top: 0});
+});
+
+
+
+
+const callback = function (entries) {
+  entries.forEach((entry) => {
+    console.log(entry);
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-fade");
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback);
+
+const targets = document.querySelectorAll(".js-show-on-scroll");
+targets.forEach(function (target) {
+  target.classList.add("opacity-0");
+  observer.observe(target);
+  target.classList.toggle("opacity-0");
+});
+
+
+
+      const boton = document.querySelector('#boton');
+      const menu = document.querySelector('#menu');
+
+      boton.addEventListener('click', () => {
+        console.log('me diste click')
+        menu.classList.toggle('hidden')
+      })
+      
+
+
+
+
+let text = new SplitType('#text');
+let characters = document.querySelectorAll('.char');
+
+for (i=0; i<characters.length; i++){
+    characters[i].classList.add('translate-y-full');
+}
+
+
+gsap.to('.char', {
+    y: 0,
+    stagger: 0.05,
+    delay: 0.02,
+    duration: 0.5
+});
+    </script>
+  </body>
+  </html>
+</html>
